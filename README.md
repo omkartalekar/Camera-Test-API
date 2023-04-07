@@ -113,8 +113,6 @@ DELETE /deleteCameras/:id
 example - http://localhost:3000/deleteCameras/64300f617e883d4094c979cd
 Response body:
 
-json
-Copy code
 {
   "_id": "6148cb524127612d98238d6c",
   "name": "Updated Camera",

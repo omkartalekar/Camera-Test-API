@@ -1,35 +1,35 @@
 # Camera-Test-API
 
-Installation
+### Installation
 To install the project dependencies, run:
 
-npm install
+## npm install
 
 Before starting the application, you need to set the environment variables in a .env file. Here's an example:
-username 
-password
+### username 
+### password
 
 Crate databse on mongodb atlas
 https://www.mongodb.com/cloud/atlas/register
 
-Starting the server
+### Starting the server
 To start the application, run:
 
-cd server
-npm start
+## cd server
+## npm start
 The server will start listening on the port specified in the .env file.
 
-API Endpoints :
+# API Endpoints :
 
-1. Cameras
+## 1.Cameras
 
 
-a] Create a camera
+### Create a camera
 
 POST /cameras
 example - http://localhost:3000/cameras
 
-
+``` 
 Request body:
 {
   "name": "Camera 1",
@@ -45,9 +45,9 @@ Response body:
   "url": "http://localhost:8080/stream",
   "__v": 0
 }
+```
 
-
-b] Get all cameras
+### Get all cameras
 
 GET /cameras
 example - http://localhost:3000/getAllCameras
@@ -71,7 +71,7 @@ Response body:
 ]
 
 
-c] Get a camera by ID
+### Get a camera by ID
 
 GET /cameras/:id
 example - http://localhost:3000/cameras/64300f617e883d4094c979cd
@@ -86,7 +86,7 @@ Response body:
 }
 
 
-d] Update a camera
+### Update a camera
 
 PUT /cameraUpdate/:id
 example - http://localhost:3000/cameraUpdate/642ffdc868379153e8f1be2e
@@ -107,7 +107,7 @@ Response body:
 }
 
 
-e] Delete a camera
+### Delete a camera
 
 DELETE /deleteCameras/:id
 example - http://localhost:3000/deleteCameras/64300f617e883d4094c979cd
@@ -122,9 +122,9 @@ Response body:
 }
 
 
-2. Camera network
+## Camera network
 
-a] Create a camera network
+### Create a camera network
 
 POST /networks
 example - http://localhost:3000/camera-networks
@@ -153,7 +153,7 @@ Response body:
 
 
 
-b] Get a camera network by ID
+### Get a camera network by ID
 
 GET /camera-networks/:id
 example - http://localhost:3000/camera-networks/643011ed0f7e864dc870f160
@@ -172,7 +172,7 @@ Response body:
 }
 
 
-c] Update a camera network
+### Update a camera network
 
 PUT /update-CameraNetworks/:id
 example - http://localhost:3000/update-CameraNetworks/643011ed0f7e864dc870f160
@@ -226,7 +226,7 @@ Response body:
 }
 
 
-d] Delete a camera network
+### Delete a camera network
 
 DELETE /delete-CameraNetworkss/:id
 example - http://localhost:3000/delete-CameraNetworks/642ffdc868379153e8f1be2e

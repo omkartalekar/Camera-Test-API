@@ -88,7 +88,7 @@ Response body:
 
 d] Update a camera
 
-PATCH /cameraUpdate/:id
+PUT /cameraUpdate/:id
 example - http://localhost:3000/cameraUpdate/642ffdc868379153e8f1be2e
 
 Request body:

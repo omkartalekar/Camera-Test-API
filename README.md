@@ -52,6 +52,7 @@ Response body:
 GET /cameras
 example - http://localhost:3000/getAllCameras
 
+```
 Response body:
 [
   {
@@ -69,13 +70,14 @@ Response body:
     "__v": 0
   }
 ]
-
+```
 
 ### Get a camera by ID
 
 GET /cameras/:id
 example - http://localhost:3000/cameras/64300f617e883d4094c979cd
 
+```
 Response body:
 {
   "_id": "6148cb524127612d98238d6c",
@@ -84,13 +86,14 @@ Response body:
   "url": "http://localhost:8080/stream",
   "__v": 0
 }
-
+```
 
 ### Update a camera
 
 PUT /cameraUpdate/:id
 example - http://localhost:3000/cameraUpdate/642ffdc868379153e8f1be2e
 
+```
 Request body:
 {
   "name": "Updated Camera",
@@ -105,12 +108,14 @@ Response body:
   "url": "http://localhost:8080/stream",
   "__v": 0
 }
-
+```
 
 ### Delete a camera
 
 DELETE /deleteCameras/:id
 example - http://localhost:3000/deleteCameras/64300f617e883d4094c979cd
+
+```
 Response body:
 
 {
@@ -120,7 +125,7 @@ Response body:
   "url": "http://localhost:8080/stream",
   "__v": 0
 }
-
+```
 
 ## Camera network
 
@@ -129,6 +134,7 @@ Response body:
 POST /networks
 example - http://localhost:3000/camera-networks
 
+```
 Request body:
 {
   "name": "Network 1",
@@ -150,7 +156,7 @@ Response body:
   ],
   "__v": 0
 }
-
+```
 
 
 ### Get a camera network by ID
@@ -158,6 +164,7 @@ Response body:
 GET /camera-networks/:id
 example - http://localhost:3000/camera-networks/643011ed0f7e864dc870f160
 
+```
 Response body:
 
 {
@@ -170,13 +177,14 @@ Response body:
   ],
   "__v": 0
 }
-
+```
 
 ### Update a camera network
 
 PUT /update-CameraNetworks/:id
 example - http://localhost:3000/update-CameraNetworks/643011ed0f7e864dc870f160
 
+```
 Request body:
 {
     "cameras": [
@@ -224,7 +232,7 @@ Response body:
     "description": "A new camera network222",
     "__v": 0
 }
-
+```
 
 ### Delete a camera network
 

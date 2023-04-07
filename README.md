@@ -1,5 +1,12 @@
 # Camera-Test-API
 
+## Technologies Used
+
+### Node.js
+### Express.js
+### MongoDB
+### Mongoose
+
 ### Installation
 To install the project dependencies, run:
 
